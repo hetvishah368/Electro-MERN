@@ -1,0 +1,235 @@
+/* ================================
+   CHECKOUT PAGE
+================================ */
+
+.checkout-container {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  padding: 50px 20px;
+  background: #0f172a;
+  box-sizing: border-box;
+}
+
+.checkout-container > h2 {
+  text-align: center;
+  font-size: 32px;
+}
+
+/* Main Content */
+.checkout-content {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ================================
+   SHIPPING FORM
+================================ */
+
+.shipping-form {
+  background: #1e293b;
+  padding: 35px;
+  border-radius: 16px;
+  border: 1px solid #334155;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.shipping-form h3 {
+  margin: 0 0 25px;
+  font-size: 23px;
+  font-weight: 600;
+  color: #f1f5f9;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 15px;
+}
+
+/* ================================
+   INPUTS
+================================ */
+
+.shipping-form input {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #f1f5f9;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.shipping-form input::placeholder {
+  color: #64748b;
+}
+
+.shipping-form input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.shipping-form input:hover {
+  border-color: #475569;
+}
+
+/* ================================
+   SUMMARY
+================================ */
+
+.checkout-summary {
+  margin-top: 12px;
+  padding-top: 22px;
+  border-top: 1px solid #334155;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.checkout-summary h4 {
+  margin: 0;
+  color: #f59e0b;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* ================================
+   PAY NOW BUTTON
+================================ */
+
+.checkout-summary .btn {
+  min-width: 150px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #f59e0b);
+  color: #000000 ;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.checkout-summary .btn:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(59, 130, 246, 0.3);
+}
+
+.checkout-summary .btn:active {
+  transform: translateY(0);
+}
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 768px) {
+  .checkout-container {
+    padding: 40px 20px;
+  }
+
+  .checkout-container > h2 {
+    font-size: 28px;
+  }
+
+  .shipping-form {
+    padding: 28px;
+    border-radius: 14px;
+  }
+
+  .shipping-form h3 {
+    font-size: 21px;
+  }
+
+  .checkout-summary h4 {
+    font-size: 18px;
+  }
+
+  .checkout-summary .btn {
+    min-width: 135px;
+  }
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 576px) {
+  .checkout-container {
+    padding: 30px 15px;
+    min-height: calc(100vh - 60px);
+  }
+
+  .checkout-container > h2 {
+    font-size: 25px;
+  }
+
+  .shipping-form {
+    padding: 22px 18px;
+    border-radius: 12px;
+  }
+
+  .shipping-form h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+  }
+
+  .shipping-form input {
+    height: 48px;
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+
+  .checkout-summary {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+    padding-top: 20px;
+  }
+
+  .checkout-summary h4 {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .checkout-summary .btn {
+    width: 100%;
+    height: 48px;
+  }
+}
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 380px) {
+  .checkout-container {
+    padding: 25px 12px;
+  }
+
+  .shipping-form {
+    padding: 20px 15px;
+  }
+
+  .checkout-container > h2 {
+    font-size: 23px;
+  }
+
+  .shipping-form h3 {
+    font-size: 18px;
+  }
+
+  .shipping-form input {
+    height: 46px;
+  }
+
+  .checkout-summary h4 {
+    font-size: 17px;
+  }
+}
