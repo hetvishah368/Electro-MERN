@@ -1,6 +1,8 @@
 Electro - Full-Stack MERN E-Commerce App
 A professionally engineered, full-stack E-commerce platform built strictly using modern standard React (CRA) on the frontend and Express/MongoDB on the backend.
 
+The project also incorporates AI-assisted development practices to improve development efficiency, debugging, code understanding, documentation, and problem-solving.
+
 🛠 Tech Stack Details
 Frontend: Pure React.js (react-scripts), Redux Toolkit (for Cart state management), AuthContext API (for JWT user sessions).
 Backend: Node.js, Express.js architecture mapped with middleware-based routing.
