@@ -1,7 +1,7 @@
 const express=require('express');
 const router=express.Router();
 const {registeruser,loginuser,getusers}=require('../controllers/authControllers');
-const {protect}=require('../middleware/authMiddleware');
+const {protect}=require('../middleware/authmiddleware');
 const {admin}=require('../middleware/adminmiddleware');
 
 
