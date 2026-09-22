@@ -9,7 +9,7 @@ const AdminOrders = () => {
     if (!user?.token) return;
 
     const fetchOrders = async () => {
-      const res = await fetch('http://localhost:8000/api/orders', {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/orders`, {
         headers: { Authorization: `Bearer ${user.token}` }
       });
       if (!res.ok) throw new Error(`Failed to fetch orders: ${res.status}`);
@@ -20,7 +20,7 @@ const AdminOrders = () => {
   }, [user]);
 
   const updateStatus = async (id, status) => {
-    const res = await fetch(`http://localhost:8000/api/orders/${id}/status`, {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/api/orders/${id}/status`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${user.token}` },
       body: JSON.stringify({ status })
