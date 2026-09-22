@@ -1,5 +1,5 @@
 const express=require('express');
-const {protect}=require('../middleware/authMiddleware');
+const {protect}=require('../middleware/authmiddleware');
 const {admin}=require('../middleware/adminmiddleware');
 const {getproducts,getproductbyid,createproduct,updateproduct,deleteproduct}=require('../controllers/productController');
 const multer=require('multer');
